@@ -54,7 +54,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: lightblue;
+    background-color: white;
     /* DEBUG */
     min-height: 200px;
 }
@@ -112,7 +112,6 @@ main{
 
 .third.container{
     padding: 100px 0;
-    display: block;
 }
 
 .third.cards{
@@ -158,6 +157,34 @@ main{
     margin: 10px auto;
     width: 31%;
 }
+
+/* Fifth Section */
+
+#fifth-section{
+    background-color: white;
+}
+
+.fifth.container{
+    display: flex;
+    padding: 100px 0;
+    width: 80%;
+}
+
+.block.left{
+    width: 50%;
+    /* DEBUG */
+    background-color: red;
+    min-height: 200px;
+}
+
+.block.right{
+    width: 50%;
+    /* DEBUG */
+    background-color: blue;
+    min-height: 200px;
+}
+
+/* Sixth Section */
 
 
 /* Tablet Version */
@@ -212,7 +239,25 @@ main{
         width: 100%;
     } 
 
+    /* Third Section */
+
     .one, .two, .three, .four, .five, .six{
+        width: 100%;
+    }
+
+    /* Fifth Section */
+
+    .fifth.container{
+        display: block;
+    }
+
+    .block.left{
+        margin: 10px auto;
+        width: 100%;
+    }
+    
+    .block.right{
+        margin: 10px auto;
         width: 100%;
     }
 }

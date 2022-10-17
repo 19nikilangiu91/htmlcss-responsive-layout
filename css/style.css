@@ -130,7 +130,6 @@ a,i{
 }
 
 .image{
-    flex-shrink: 0;
     width: 45%;
     height: 100%;
     /* DEBUG */
@@ -177,16 +176,43 @@ a,i{
     margin: 10px auto;
     width: 48%;
     /* DEBUG */
-    background-color: purple;
-    border: 2px solid black;
+    background-color: blueviolet;
+    /* border: 2px solid black; */
+}
+
+.card.left .imageleft{
+    width: 100%;
+}
+
+.card.left, .lefttitle, .contentleft{
+    padding-top: 25px;
+    text-align: left;
+    color: white;
 }
 
 .card.right{
-    margin: 10px auto;
+    margin-top: 90px;
     width: 48%;
+    /* padding-top: 150px; */
     /* DEBUG */
     background-color: white;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+}
+
+.card.right .imageright{
+    width: 70%;
+}
+
+.righttittle, .contentright{
+    padding: 25px 0;
+    text-align: center;
+    color: black;
+}
+
+.fa-solid.fa-arrow-down{
+    padding: 25px;
+    border-radius: 50px;
+    background-color: blueviolet;
 }
 
 /* Third Section */

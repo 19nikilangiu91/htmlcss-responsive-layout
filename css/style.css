@@ -201,6 +201,23 @@ main{
     min-height: 200px;
 }
 
+/* Footer Block */
+
+#footer-section{
+    background-color: black;
+}
+
+.footer.container{
+    padding: 100px 0;
+    width: 60%;
+}
+
+.footer.block{
+    background-color: white;
+    margin: 0 auto;
+    /* DEBUG */
+    min-height: 200px;
+}
 
 /* Tablet Version */
 

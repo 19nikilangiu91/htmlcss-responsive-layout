@@ -9,7 +9,7 @@
 /* Header Rules */
 
 header{
-    background-color: lightblue;
+    background-color:#0084fd;
     height: 75px;
     width: 100%;
     position: fixed;
@@ -29,6 +29,11 @@ header li{
     padding: 10px;
 }
 
+header li a{
+    color: white;
+    text-decoration: none;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -43,6 +48,18 @@ header li{
 main{
     margin-top: 150px;
 }
+
+/* Buttons */
+
+.get-btn a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 10px;
+}
+
+
 
 /* First Section */
 

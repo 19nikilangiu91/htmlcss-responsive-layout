@@ -54,12 +54,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: white;
     /* DEBUG */
     min-height: 200px;
 }
 
 .card{
+    background-color: lightblue;
     margin: 10px auto;
     width: calc(90% / 3);
     /* DEBUG */
@@ -185,6 +185,21 @@ main{
 }
 
 /* Sixth Section */
+
+#sixth-section{
+    background-color: blueviolet;
+}
+
+.sixth.container{
+    padding: 100px 0;
+    width: 60%;
+}
+
+.main.block{
+    background-color: white;
+    /* DEBUG */
+    min-height: 200px;
+}
 
 
 /* Tablet Version */

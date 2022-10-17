@@ -13,12 +13,15 @@ header{
     height: 75px;
     width: 100%;
     position: fixed;
+    z-index: 500;
     top: 0;
     left: 0;
 }
 
 header .container{
     display: flex;
+    width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -34,12 +37,9 @@ header li a{
     text-decoration: none;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-
 .hbg-menu{
+    color: white;
+    text-decoration: none;
     display: none;
 }
 
@@ -47,6 +47,11 @@ header li a{
 
 main{
     margin-top: 150px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Buttons */
@@ -59,7 +64,20 @@ main{
     padding: 10px;
 }
 
+.apple-btn {
+    text-align: center;
+    width: 50%;
+    margin-top: 25px;
+    background-color: #0084fd;
+    border-radius: 25px;
+    padding: 5px;
+    
+}
 
+a,i{
+    text-decoration: none;
+    color: white;
+}
 
 /* First Section */
 
@@ -76,19 +94,69 @@ main{
 }
 
 .card{
+    text-align: center;
+    padding: 20px;
     background-color: lightblue;
     margin: 10px auto;
+    border-radius: 25px;
     width: calc(90% / 3);
     /* DEBUG */
     min-height: 200px;
-    border: 2px solid black;
 }
+
+/* Double Card */
 
 .double.card{
+    display: flex;
     margin: 10px auto;
-    width: calc( (96% / 3) * 2)
+    width: calc( (96% / 3) * 2);
+    text-align: left;
+    padding: 10px;
 }
 
+.titleone{
+    padding: 20px;
+    font-size: 13px;
+    width: 55%;
+    color: #0084fd;
+    /* DEBUG */
+    /* background-color: green; */
+    height: 100%;
+}
+
+.titleone .contentone{
+    padding-top: 20px;
+    color: black;
+}
+
+.image{
+    flex-shrink: 0;
+    width: 45%;
+    height: 100%;
+    /* DEBUG */
+    /* background-color: red; */
+}
+
+.image .uno{
+    position: relative;
+    bottom: -10px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* First Card  */
+
+.fa-regular.fa-file-code,
+.fa-solid.fa-compass-drafting,
+.fa-solid.fa-laptop-code,
+.fa-solid.fa-bullhorn{
+    font-size: 80px;
+}
+
+.contenth2{
+    margin: 10px auto 0 auto;
+}
 /* Second Section */
 
 #second-section{
@@ -250,10 +318,21 @@ main{
         display: none
     }
 
+    .double.card{
+        flex-direction: column;
+    }
+
+    .titleone{
+        width: 100%;
+    }
+
+    .image{
+        height: 100%;
+    }
     /* Second Section */
 
-    .second.container{
-        display: block;
+    .image{
+        width: 100%;
     }
 
     .card.left{
@@ -280,9 +359,9 @@ main{
     /* First Section */
 
     .double.card{
-        display: block;
         width: 100%;
     }
+
     .card{
         display: block;
         width: 100%;

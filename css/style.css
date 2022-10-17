@@ -60,14 +60,16 @@ main{
 }
 
 .card{
-    width: calc(100% / 3);
+    margin: 10px auto;
+    width: calc(90% / 3);
     /* DEBUG */
     min-height: 200px;
     border: 2px solid black;
 }
 
 .double.card{
-    width: calc( (100% / 3) * 2)
+    margin: 10px auto;
+    width: calc( (96% / 3) * 2)
 }
 
 /* Second Section */
@@ -87,7 +89,7 @@ main{
 }
 
 .card.left{
-    margin: 10px;
+    margin: 10px auto;
     width: 48%;
     /* DEBUG */
     background-color: purple;
@@ -95,7 +97,7 @@ main{
 }
 
 .card.right{
-    margin: 10px;
+    margin: 10px auto;
     width: 48%;
     /* DEBUG */
     background-color: white;
@@ -126,10 +128,41 @@ main{
     background-color: purple;
 }
 
+/* Fourth Seciton */
+
+#fourth-section{
+    background-color: blueviolet;
+}
+
+.fourth.container{
+    padding: 100px 0;
+    width: 80%;
+}
+
+.main-title{
+    background-color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    /* DEBUG */
+    min-height: 100px;
+    text-align: center;
+}
+
+.fourth.cards{
+    background-color: blueviolet;
+}
+
+.one, .two, .three, .four, .five, .six{
+    background-color: white;
+    margin: 10px auto;
+    width: 31%;
+}
+
 
 /* Tablet Version */
 
-@media screen and (max-width:768px) {
+@media all and (max-width:768px){
 
     /* First Section */
 
@@ -154,11 +187,19 @@ main{
     .card.right{
         width: 100%;
     }
+
+    /* Third Section */
+
+    .one, .two, .three, .four, .five, .six{
+        width: 46%;
+        margin: 10px auto;
+    }
+
 }
 
 /* Mobile Version */
 
-@media screen and (max-width:480px) {
+@media all and (max-width:480px){
 
     /* First Section */
 
@@ -169,7 +210,9 @@ main{
     .card{
         display: block;
         width: 100%;
-    }
+    } 
 
-    /* Second Section */
+    .one, .two, .three, .four, .five, .six{
+        width: 100%;
+    }
 }

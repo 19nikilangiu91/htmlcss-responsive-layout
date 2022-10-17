@@ -81,23 +81,51 @@ main{
     display: flex;
 }
 
-.card.left{
-    margin: 10px;
-    width: 50%;
-    background-color: purple;
+.seconds.cards{
     /* DEBUG */
     min-height: 200px;
+}
+
+.card.left{
+    margin: 10px;
+    width: 48%;
+    /* DEBUG */
+    background-color: purple;
     border: 2px solid black;
 }
 
 .card.right{
     margin: 10px;
-    width: 50%;
-    background-color: white;
+    width: 48%;
     /* DEBUG */
-    min-height: 200px;
+    background-color: white;
     border: 2px solid black;
 }
+
+/* Third Section */
+
+#third-section{
+    background-color: white;
+}
+
+.third.container{
+    padding: 100px 0;
+    display: block;
+}
+
+.third.cards{
+    width: 100%;
+    /* DEBUG */
+    min-height: 200px;
+}
+
+.main, .top, .middle, .bottom{
+    margin: 10px;
+    width: 100%;
+    /* DEBUG */
+    background-color: purple;
+}
+
 
 /* Tablet Version */
 

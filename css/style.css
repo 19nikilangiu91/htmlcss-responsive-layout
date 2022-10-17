@@ -34,10 +34,20 @@ header li{
     margin: 0 auto;
 }
 
+.hbg-menu{
+    display: none;
+}
+
 /* Main Rules */
 
 main{
-    margin-top: 175px;
+    margin-top: 150px;
+}
+
+/* First Section */
+
+#first-section{
+    margin-bottom: 100px;
 }
 
 .cards{
@@ -60,13 +70,40 @@ main{
     width: calc( (100% / 3) * 2)
 }
 
-.hbg-menu{
-    display: none;
+/* Second Section */
+
+#second-section{
+    background-color: blueviolet;
+}
+
+.second.container{
+    padding: 100px 0;
+    display: flex;
+}
+
+.card.left{
+    margin: 10px;
+    width: 50%;
+    background-color: purple;
+    /* DEBUG */
+    min-height: 200px;
+    border: 2px solid black;
+}
+
+.card.right{
+    margin: 10px;
+    width: 50%;
+    background-color: white;
+    /* DEBUG */
+    min-height: 200px;
+    border: 2px solid black;
 }
 
 /* Tablet Version */
 
 @media screen and (max-width:768px) {
+
+    /* First Section */
 
     .hbg-menu{
         display: inline;
@@ -75,11 +112,27 @@ main{
     header li{
         display: none
     }
+
+    /* Second Section */
+
+    .second.container{
+        display: block;
+    }
+
+    .card.left{
+        width: 100%;
+    }
+    
+    .card.right{
+        width: 100%;
+    }
 }
 
 /* Mobile Version */
 
 @media screen and (max-width:480px) {
+
+    /* First Section */
 
     .double.card{
         display: block;
@@ -89,4 +142,6 @@ main{
         display: block;
         width: 100%;
     }
+
+    /* Second Section */
 }

@@ -75,8 +75,15 @@ main{
 }
 
 a,i{
+    margin: 5px;
     text-decoration: none;
     color: white;
+}
+
+.more-btn{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 /* First Section */
@@ -125,7 +132,8 @@ a,i{
 }
 
 .titleone .contentone{
-    padding-top: 20px;
+    font-size: 15px;
+    padding-top: 30px;
     color: black;
 }
 
@@ -153,8 +161,8 @@ a,i{
     font-size: 80px;
 }
 
-.contenth2{
-    margin: 10px auto 0 auto;
+.contenth2, .contentcardone{
+    margin: 20px auto 0 auto;
 }
 /* Second Section */
 
@@ -297,7 +305,7 @@ strong{
     color: white;
 }
 
-/* Fourth Seciton */
+/* Fourth Secton */
 
 #fourth-section{
     background-color: blueviolet;
@@ -309,13 +317,15 @@ strong{
 }
 
 .main-title{
-    background-color: white;
-    margin-bottom: 20px;
-    width: 100%;
     display: block;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
     /* DEBUG */
     min-height: 100px;
     text-align: center;
+    /* background-color: green; */
 }
 
 .fourth.cards{
@@ -324,8 +334,29 @@ strong{
 
 .one, .two, .three, .four, .five, .six{
     background-color: white;
+    text-align: left;
     margin: 10px auto;
     width: 31%;
+}
+
+.one .number,
+.two .number,
+.three .number,
+.four .number,
+.five .number,
+.six .number{
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.number, .category{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.contentnumber{
+    padding: 5px 0 20px 0;
+    font-size: 15px;
 }
 
 /* Fifth Section */

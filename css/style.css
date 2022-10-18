@@ -81,9 +81,16 @@ a,i{
 }
 
 .more-btn{
-    background-color: blueviolet;
+    background-color: #8e65ff;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
+}
+
+.linkedin-btn{
+    font-size: 10px;
+    background-color: #8e65ff;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 /* First Section */
@@ -103,7 +110,7 @@ a,i{
 .card{
     text-align: center;
     padding: 20px;
-    background-color: lightblue;
+    background-color: #97ccfd;
     margin: 10px auto;
     border-radius: 25px;
     width: calc(90% / 3);
@@ -138,6 +145,7 @@ a,i{
 }
 
 .image{
+    padding-top: 40px;
     width: 45%;
     height: 100%;
     /* DEBUG */
@@ -146,6 +154,7 @@ a,i{
 
 .image .uno{
     position: relative;
+    object-fit: contain cover;
     bottom: -10px;
     z-index: 0;
     width: 100%;
@@ -159,15 +168,24 @@ a,i{
 .fa-solid.fa-laptop-code,
 .fa-solid.fa-bullhorn{
     font-size: 80px;
+    color: #0084fd;
+    
+
 }
 
-.contenth2, .contentcardone{
+.contenth2{
+    margin: 20px auto;
+    color: #0084fd;
+}
+
+.contentcardone{
     margin: 20px auto 0 auto;
+    color: black;
 }
 /* Second Section */
 
 #second-section{
-    background-color: blueviolet;
+    background-color: #8e65ff;
 }
 
 .second.container{
@@ -181,15 +199,16 @@ a,i{
 }
 
 .card.left{
+    background-color: #8e65ff;
     margin: 10px auto;
     width: 48%;
     /* DEBUG */
-    background-color: blueviolet;
     /* border: 2px solid black; */
 }
 
 .card.left .imageleft{
     width: 100%;
+    background-color: #8e65ff;
 }
 
 .card.left, .lefttitle, .contentleft{
@@ -218,9 +237,10 @@ a,i{
 }
 
 .fa-solid.fa-arrow-down{
+    color: black;
     padding: 25px;
     border-radius: 50px;
-    background-color: blueviolet;
+    background-color: #8e65ff;
 }
 
 /* Third Section */
@@ -256,7 +276,7 @@ a,i{
 main.card, .titlethird{
     font-size: 40px;
     padding-bottom: 10px;
-    color: blueviolet;
+    color: #8e65ff;
 }
 
 main.card, .contenthird{
@@ -269,7 +289,7 @@ main.card, .contenthird{
     margin: 10px;
     width: 100%;
     /* DEBUG */
-    background-color: blueviolet;
+    background-color: #8e65ff;
 }
 
 /* Top, Middle, Bottom Card */
@@ -283,8 +303,10 @@ main.card, .contenthird{
 .top.card .testimonialone,
 .middle.card .testimonialone,
 .bottom.card .testimonialone{
-    width: 50%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .top.card .text,
@@ -308,7 +330,7 @@ strong{
 /* Fourth Secton */
 
 #fourth-section{
-    background-color: blueviolet;
+    background-color: #8e65ff;
 }
 
 .fourth.container{
@@ -329,7 +351,7 @@ strong{
 }
 
 .fourth.cards{
-    background-color: blueviolet;
+    background-color: #8e65ff;
 }
 
 .one, .two, .three, .four, .five, .six{
@@ -372,17 +394,40 @@ strong{
 }
 
 .block.left{
-    width: 50%;
+    width: 65%;
     /* DEBUG */
-    background-color: red;
-    min-height: 200px;
+    /* background-color: red; */
+    /* min-height: 200px; */
+}
+
+.block.left .aboutus{
+    color: #8e65ff;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+.block.left .contentfive{
+    padding: 10px 20px;
 }
 
 .block.right{
-    width: 50%;
+    width: 35%;
     /* DEBUG */
-    background-color: blue;
+    /* background-color: blue; */
     min-height: 200px;
+}
+
+.block.right .aboutlogo{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.block.right .aboutcontent{
+    color: #8e65ff;
+    font-size: 15px;
+    padding: 10px 150px 20px 0px;
 }
 
 /* Sixth Section */
@@ -400,6 +445,10 @@ strong{
     background-color: white;
     /* DEBUG */
     min-height: 200px;
+}
+
+.fa-brands.fa-linkedin{
+
 }
 
 /* Footer Block */
@@ -465,6 +514,12 @@ strong{
     .one, .two, .three, .four, .five, .six{
         width: 46%;
         margin: 10px auto;
+    }
+
+    /* Fifth Section */
+    
+    .block.right .aboutcontent{
+        padding: 10px 100px 20px 0px;
     }
 }
 
